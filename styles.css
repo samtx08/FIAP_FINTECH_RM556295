@@ -1,0 +1,106 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5C4ECC, #534A9A);
+}
+
+.overlay {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    right: 2%;
+    bottom: 10%;
+    background-color: rgba(184, 184, 184, 0.5);
+    mix-blend-mode: multiply;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+@media (min-width: 1888px) {
+    .overlay {
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        bottom: 20%;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.btn-primary, .btn-secondary {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4ECC9B;
+    border-color:#4ECC9B;
+}
+
+.btn-secondary {
+    background-color: #CC804E;
+    border-color:#CC804E;
+
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:not(:disabled):not(:disabled):active {
+    background-color: #CC634E;
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color:#CC634E;
+    color: #FFFFFF;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:not(:disabled):not(:disabled):active {
+    background-color: #4EC5CC;
+    box-shadow: none !important;
+    outline-color: none !important;
+    border-color:#4EC5CC;
+    color: #FFFFFF;
+}
+
+.form-control {
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label.text-light {
+    display: inline-block;
+    width: 300px; 
+    margin-bottom: 5px;
+    text-align: left;
+}
